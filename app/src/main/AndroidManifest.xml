@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.M_V_SZ_N_elso">
-        <activity android:name=".Termekvalaszt"></activity>
+        <activity android:name=".Adatok"></activity>
+        <activity android:name=".Termekvalaszt" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

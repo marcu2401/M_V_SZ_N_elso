@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adatok"
+    android:background="#B6B6B6">
+
+    <TextView
+        android:id="@+id/o_cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szállítási adatok megadása"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="adja meg a nevét"
+        android:layout_below="@+id/o_cim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/e_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="adja meg az e_mail címét"
+        android:layout_below="@+id/nev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/telSzam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="adja meg a telefonszámát"
+        android:inputType="number"
+        android:layout_below="@+id/e_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/SzallCim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="adja meg a lakcímét"
+        android:layout_below="@+id/telSzam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SzallCim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/let_lt_s" />
+
+    <Button
+        android:id="@+id/megrendel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Megrendelem"
+        android:layout_below="@+id/kep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#0099FF"/>
+
+
+</RelativeLayout>
