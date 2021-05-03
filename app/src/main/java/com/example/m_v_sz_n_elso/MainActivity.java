@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         termekvalaszt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this, Termekvalaszt.Activity);
+                Intent i= new Intent(MainActivity.this, Termekvalaszt.class);
                 startActivity(i);
             }
         });

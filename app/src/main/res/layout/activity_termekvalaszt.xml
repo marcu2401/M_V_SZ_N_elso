@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Termekvalaszt"
+    android:background="#B6B6B6">
+
+    <TextView
+        android:id="@+id/szoveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Termék kiválasztása"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp" />
+
+    <RadioButton
+        android:id="@+id/gyros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/szoveg"
+        android:layout_marginLeft="150dp"
+        android:text="Gyros"
+        android:buttonTint="#0099FF"
+        />
+    <RadioButton
+        android:id="@+id/rantotthus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gyros"
+        android:layout_marginLeft="150dp"
+        android:text="Rántotthús"
+        android:buttonTint="#0099FF"
+        />
+    <RadioButton
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rantotthus"
+        android:layout_marginLeft="150dp"
+        android:text="Pizza"
+        android:buttonTint="#0099FF"
+        />
+    <RadioButton
+        android:id="@+id/sultkrumpli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pizza"
+        android:layout_marginLeft="150dp"
+        android:text="Sültkrumpli"
+        android:buttonTint="#0099FF"
+        />
+    <Button
+        android:id="@+id/megadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sultkrumpli"
+        android:layout_centerHorizontal="true"
+        android:text="Adatok megadása"
+        android:backgroundTint="#0099FF"
+        />
+</RelativeLayout>
