@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.M_V_SZ_N_elso">
-        <activity android:name=".Adatok"></activity>
+        <activity android:name=".Megrendel"></activity>
+        <activity
+            android:name=".megrendel"
+            android:label="@string/title_activity_megrendel"
+            android:theme="@style/Theme.M_V_SZ_N_elso.NoActionBar" />
+        <activity android:name=".Adatok" />
         <activity android:name=".Termekvalaszt" />
         <activity android:name=".MainActivity">
             <intent-filter>
