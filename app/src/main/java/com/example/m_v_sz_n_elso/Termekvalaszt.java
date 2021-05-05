@@ -25,7 +25,7 @@ public class Termekvalaszt extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(Termekvalaszt.this, Adatok.class);
-                String szoveg=null;
+                String szoveg="a";
 
                 if (Gyros.isChecked()){
                     szoveg+=Gyros.getText().toString()+", ";

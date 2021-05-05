@@ -17,7 +17,7 @@ public class Megrendel extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         if (extras!=null){
-            textView2.setText("Neved: "+extras.getString("nev")+", eMail:  "+extras.getString("eMail")+", telefonszám: "+extras.getString("Tel")+", Lakcím: "+extras.getString("LCím")
+            textView2.setText("Neved: "+extras.getString("nev")+", eMail:  "+extras.getString("eMail")+", telefonszám: "+extras.getString("Tel")+", Lakcím: "+extras.getString("LCim")
             );
             textView4.setText("Megrendelt étel: "+extras.getString("szoveg"));
 
