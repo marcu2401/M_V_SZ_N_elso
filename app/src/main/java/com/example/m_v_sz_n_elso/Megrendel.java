@@ -19,7 +19,7 @@ public class Megrendel extends AppCompatActivity {
         if (extras!=null){
             textView2.setText("Neved: "+extras.getString("nev")+", eMail:  "+extras.getString("eMail")+", telefonszám: "+extras.getString("Tel")+", Lakcím: "+extras.getString("LCím")
             );
-            textView4.setText("Megrendelt étel: "+extras.getString("Gyros")+extras.getString("Pizza")+extras.getString("Rantotthus")+extras.getString("Sultkrumpli"));
+            textView4.setText("Megrendelt étel: "+extras.getString("szoveg"));
 
         }
     }

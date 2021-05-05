@@ -25,18 +25,21 @@ public class Termekvalaszt extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(Termekvalaszt.this, Adatok.class);
+                String szoveg=null;
+
                 if (Gyros.isChecked()){
-                    i.putExtra("Gyros", Gyros.getText().toString());
+                    szoveg+=Gyros.getText().toString()+", ";
                 }
                 if (Pizza.isChecked()){
-                    i.putExtra("Pizza", Pizza.getText().toString());
+                    szoveg+=Pizza.getText().toString()+", ";
                 }
                 if (Rantotthus.isChecked()){
-                    i.putExtra("Rantotthus", Rantotthus.getText().toString());
+                    szoveg+=Rantotthus.getText().toString()+", ";
                 }
                 if (Sultkrupli.isChecked()){
-                    i.putExtra("Sultkrumpli", Sultkrupli.getText().toString());
+                    szoveg+=Sultkrupli.getText().toString()+", ";
                 }
+                i.putExtra("szoveg",szoveg);
                 startActivity(i);
             }
         });
