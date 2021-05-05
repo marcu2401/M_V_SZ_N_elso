@@ -19,7 +19,46 @@ public class Megrendel extends AppCompatActivity {
         if (extras!=null){
             textView2.setText("Neved: "+extras.getString("nev")+", eMail:  "+extras.getString("eMail")+", telefonszám: "+extras.getString("Tel")+", Lakcím: "+extras.getString("LCim")
             );
-            textView4.setText("Megrendelt étel: "+extras.getString("szoveg"));
+            if(extras.containsKey("Gyros")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Gyros"));
+            }
+            else if(extras.containsKey("Pizza")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza"));
+            }
+            else if(extras.containsKey("Rantotthus")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Rantotthus"));
+            }
+            else if(extras.containsKey("Sultkrumpli")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Sultkrumpli"));
+            }
+            else if(extras.containsKey("Sultkrumpli") && extras.containsKey("Rantotthus")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Sultkrumpli")+" "+ extras.getString("Rantotthus"));
+            }
+            else if(extras.containsKey("Gyros")&& extras.containsKey("Rantotthus")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Gyros")+" "+extras.getString("Rantotthus"));
+            }
+            else if(extras.containsKey("Pizza") && extras.containsKey("Rantotthus")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza") +" "+extras.getString("Rantotthus"));
+            }
+            else if(extras.containsKey("Sultkrumpli")&& extras.containsKey("Gyros")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Sultkrumpli")+" "+extras.getString("Gyros"));
+            }
+            else if(extras.containsKey("Pizza") && extras.containsKey("Gyros")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza")+" "+extras.getString("Gyros"));
+            }
+            else if(extras.containsKey("Pizza") && extras.containsKey("Sultkrumpli")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza")+" "+extras.getString("Sultkrumpli"));
+            }
+            else if(extras.containsKey("Pizza") && extras.containsKey("Sultkrumpli")&& extras.containsKey("Rantotthus")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza")+" "+extras.getString("Sultkrumpli")+" "+extras.getString("Rantotthus"));
+            }
+            else if(extras.containsKey("Pizza") && extras.containsKey("Sultkrumpli")&& extras.containsKey("Rantotthus") && extras.containsKey("Gyros")){
+                textView4.setText("Megrendelt étel: "+extras.getString("Pizza")+" "+extras.getString("Sultkrumpli")+" "+extras.getString("Rantotthus")+" "+extras.getString("Gyros"));
+            }
+
+
+
+
 
         }
     }

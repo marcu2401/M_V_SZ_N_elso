@@ -16,7 +16,7 @@
         android:layout_marginTop="50dp"
         android:textSize="30dp" />
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/gyros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:text="Gyros"
         android:buttonTint="#0099FF"
         />
-    <RadioButton
+    <CheckBox
         android:id="@+id/rantotthus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:text="Rántotthús"
         android:buttonTint="#0099FF"
         />
-    <RadioButton
+    <CheckBox
         android:id="@+id/pizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:text="Pizza"
         android:buttonTint="#0099FF"
         />
-    <RadioButton
+    <CheckBox
         android:id="@+id/sultkrumpli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
